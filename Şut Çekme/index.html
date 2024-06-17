@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şut Çekme</title>
+    <style>
+        body {
+            background-image: url("cimen.jpg");
+            background-size: cover;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            position: relative;
+            overflow: hidden;
+        }
+        .kale {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px; /* Adjust this value to control the distance from the top */
+        }
+        .top {
+            width: 50px;
+            height: 50px;
+            background-image: url('top.png');
+            background-size: cover;
+            position: absolute;
+            bottom: 20px; /* Adjust the initial position from the bottom */
+        }
+        .score-container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            font-size: 24px;
+        }
+        .sutbuton{
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="score-container">
+        <p id="score">Skor : 0</p>
+        <button width="100px" height="50px" class="sutbuton" onclick="sutcekildi()">Şut Çek</button>
+    </div>
+    <div class="sol2">
+        <img src="kale.png" class="kale" id="kale" alt="Kale">
+        <h2 id="gol" style="color: white; font-size:500%;"></h2>
+        <div class="top" id="top" ></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
